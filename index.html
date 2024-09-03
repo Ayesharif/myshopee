@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+
+
+</head>
+
+<body>
+
+
+    <div id="emailverification">
+
+        <nav class="header">
+            
+            <div class="heading">
+                <h1>My Shopee</h1>
+            </div>
+
+
+            <ul class="ul">
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li class="li"><a class="a" href="#">Category</a></li>
+                <li class="li"><a class="a" href="#">Contact</a></li>
+                <li class="li"><a class="a" href="#">About</a></li>
+                <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <ul class="dropdown-content">
+                                <div class="subli">
+                                    <a id="profile" href="profile.html">My Profile</a>
+                                </div>
+                                <div class="subli logout" id="logout">
+                                    <input type="submit" value="Logout" id="logout-btn">
+                                </div>
+                            </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- <div class="front-profile">
+            <h1 id="name"></h1>
+            <img id="image" src="" alt="profile image">
+        </div> -->
+
+        <main id="">
+
+            <p class="fir-text" id=welcome>Welcome to our page </p>
+
+            <p class="sec-text">You have successfully login our page</p>
+
+
+        </main>
+    </div>
+    <div id="notverified">
+        <div>
+            <h1>Verify You Email</h1>
+        </div>
+        <div>
+            <p>We have sent you email verificarion link so please first open your email and click the avaliable
+                link.
+            </p>
+        </div>
+        <div class="subli logout" id="logout">
+            <input type="submit" value="Logout" id="logout-btn">
+        </div>
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="home.js"></script>
+    
+</body>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --smallT: 16px;
+            --midT: 25px;
+            --largeT: 30px;
+            --Dcolor: rgb(4, 134, 129);
+            --Lcolor: rgb(100, 184, 181);
+            --Hovcolor: rgb(16, 196, 190);
+
+        }
+        .main{
+            background-color: var(--Dcolor);
+        }
+
+        .form {
+            width: 100hw;
+            height: 100vh;
+            /* height: max-content; */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .heading {
+            width: 100hw;
+font-size: var(--largeT);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .field {
+            align-self: center;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--Lcolor);
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        input[type=email],
+        input[type=password] {
+            font-size: var(--midT);
+            display: block;
+            /* width: 150%; */
+            margin: 30px;
+            padding: 10px 50px;
+            border: 1px solid lightgray;
+
+            /* border-color: lightgray; */
+        }
+
+        input[type=submit] {
+            width: 150px;
+            height: 40px;
+            font-size: var(--midT);
+            margin: 20px;
+            border: none;
+            background-color: rgb(146, 239, 239);
+            border-radius: 10px;
+            
+        }
+        #login-btn :hover{
+            box-shadow: 1px 1px 10px 1px black;
+        }
+        a{
+            text-decoration: none;
+            margin: 10px;
+            color: red;
+            font-size: var(--midT);
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+
+
+        <div class="form">
+
+
+            <div class="heading">
+                <h1>Login Page</h1>
+            </div>
+            <form id="login-form">
+                <div class="field">
+
+                    <input type="email" id="email" placeholder="Enter email address" >
+                    <input type="password" id="password" placeholder="Enter password" >
+
+                    <a href="forgotpas.html">Forgot password?</a>
+                    
+                    <input type="submit" value="Login" id="login-btn">
+                    <a href="signup.html">I haven't sign up</a>
+                    <a href="index.html">Skip</a>
+
+                </div>
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="login.js"></script>
+
+    <script></script>
+</body>
+
+</html>

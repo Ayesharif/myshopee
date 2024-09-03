@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --smallT: 16px;
+            --midT: 25px;
+            --largeT: 30px;
+            --Dcolor: rgb(4, 134, 129);
+            --Lcolor: rgb(100, 184, 181);
+            --Hovcolor: rgb(16, 196, 190);
+
+        }
+        body{
+            background-color: var(--Dcolor);
+        }
+        
+
+        .form {
+            width: 100hw;
+            height: 100vh;
+            /* height: max-content; */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .heading {
+            width: 100hw;
+            font-size: var(--largeT);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .field {
+            width: max-content;
+            
+            align-self: center;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--Lcolor);
+            border-radius: 10px;
+            padding: 50px;
+
+        }
+
+        input[type=email],
+        input[type=text],
+        input[type=password],
+        input[type=file]
+         {
+            display: block;
+font-size: var(--midT);
+            margin: 30px;
+            padding: 10px 50px;
+            border: 1px solid lightgray;
+
+            /* border-color: lightgray; */
+        }
+
+        input[type=submit] {
+            
+            font-size: var(--midT);
+            width: 150px;
+            height: 40px;
+            margin: 20px;
+
+            border: none;
+            background-color: rgb(146, 239, 239);
+            border-radius: 10px;
+
+        }
+        input[type=submit] :hover{
+            box-shadow: 1px 1px 10px 1px black;
+            background-color: aliceblue;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-size: var(--midT);
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+
+
+        <div class="form">
+
+
+            <div class="heading">
+                <h1>Signup Page</h1>
+            </div>
+            <form id="signup-form">
+                <div class="field">
+                    
+                    <input type="text" id="F-name" placeholder="First name">
+                    <input type="text" id="L-name" placeholder="Last name">
+                    <input type="email" id="email" placeholder="abc@gmail.com">
+                    <input type="password" id="password" placeholder="Abc@1234">
+                    <input type="file" accept="jpg, png, jpeg" id="image" >
+                    <input type="submit" value="Signup" id="signupbtn">
+                    <a href="login.html">I already have an account</a>
+
+                </div>
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="signup.js"></script>
+
+    <script></script>
+</body>
+
+</html>

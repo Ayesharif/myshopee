@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+
+    <div id="emailverification">
+
+        <nav class="header">
+
+            <div class="heading">
+                <h1>My Shopee</h1>
+            </div>
+
+
+            <ul class="ul">
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li class="li"><a class="a" href="#">Category</a></li>
+                <li class="li"><a class="a" href="#">Contact</a></li>
+                <li class="li"><a class="a" href="#">About</a></li>
+                <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <ul class="dropdown-content">
+                        <div class="subli">
+                            <a id="profile" href="#">My Profile</a>
+                        </div>
+                        <div class="subli logout" id="logout">
+                            <input type="submit" value="Logout" id="logout-btn">
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- <div class="front-profile">
+            <h1 id="name"></h1>
+            <img id="image" src="" alt="profile image">
+        </div> -->
+<main>
+    <div class="ppic">
+        <img id="image" src="" alt="profile image">
+
+    </div>
+
+<div class="p-details"> 
+   <div class="sub-details">
+       <label > First Name :  </label>
+        <p id="firstN"></p>
+   </div> 
+
+   <div class="sub-details">
+       <label > Last Name :  </label>
+        <p id="lastN">ayehsrf</p>
+   </div>
+
+   <div class="sub-details">
+       <label > Email Address :  </label>
+        <p id="email">ayehsrf</p>
+   </div>
+   
+</div>
+ <div class="change-btn">
+        <a id="change-btn" href="update.html">Update Profile</a>
+    </div>
+</main>
+        
+    </div>
+    <!-- <div id="notverified">
+        <div>
+            <h1>Verify You Email</h1>
+        </div>
+        <div>
+            <p>We have sent you email verificarion link so please first open your email and click the avaliable
+                link.
+            </p>
+        </div>
+
+    </div> -->
+    <script type="module" src="firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="profile.js"></script>
+
+</body>
+</body>
+
+</html>
